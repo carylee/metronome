@@ -38,6 +38,7 @@ div.button {
   margin: auto;
   background: rgba(250,112,52,1);
   height: 65px;
+  font-size: 170%;
   text-align: center;
   padding: 10px 0 0 0;
   -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;
