@@ -5,11 +5,17 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
     <script src="js/metronome.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
   </head>
   <body>
-  <form>
-    <input id="tempo" name="tempo" placeholder="Tempo in BPM" />
-    <input id="start" type="button" value="Start" />
-  </form>
+  <div id="visual">
+    <canvas width="320" height="160"></canvas>
+  </div>
+  <article>
+    <input id="tempo" name="tempo" placeholder="60" />
+    <div id="buttons">
+      <div id="start" class="button"><span class="button">Start</span></div>
+    </div>
+  </article>
   </body>
 </html>
