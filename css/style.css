@@ -1,9 +1,11 @@
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
-  height: 480px;
-  border: 1px solid black;
+  /*width: 320px;
+  height: 480px;*/
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid black;*/
 }
 
 h1,h2,h3,h4,h5,p,input,span {

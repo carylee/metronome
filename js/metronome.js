@@ -2,20 +2,23 @@ var metronome = (function() {
   var display;
   var tempo = 60;
   var playback;
+  var ticks;
   //var tick = document.getElementById("tick");
   //var tock = document.getElementById("tock");
+  $(document).ready( function(){
+    ticks = [
+      document.getElementById("tick"),
+      document.getElementById("tock"),
+    ];
+  });
   /*var ticks = [
-    document.getElementById("tick"),
-    document.getElementById("tock"),
-  ];*/
-  var ticks = [
     new Audio("audio/tick.mp3"),
     new Audio("audio/tock.mp3"),
     new Audio("audio/tick.mp3"),
     new Audio("audio/tock.mp3"),
     new Audio("audio/tick.mp3"),
     new Audio("audio/tock.mp3"),
-  ]
+  ]*/
   var tickIndex = 0;
   var beat = function() {
     ticks[tickIndex].play();
