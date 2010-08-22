@@ -1,0 +1,6 @@
+Pocket Metronome
+================
+
+This is my attempt at making an HTML5 metronome for smartphone users who don't feel like having a metronome native application.
+
+Unfortunately, it seems like android and maybe iPhone have limited usability of the <audio> tag, so it seems somewhat limited.  And the timeout is unreliable?
