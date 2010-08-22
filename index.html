@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
     <script src="js/metronome.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -9,10 +13,10 @@
   </head>
   <body>
   <div id="visual">
-    <canvas width="320" height="160"></canvas>
+    <canvas width="320" height="120"></canvas>
   </div>
   <article>
-    <input id="tempo" name="tempo" placeholder="60" />
+    <input id="tempo" type="number" name="tempo" placeholder="60" min="0" max="300" step="1" />
     <div id="buttons">
       <div id="start" class="button"><span class="button">Start</span></div>
     </div>

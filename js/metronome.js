@@ -48,6 +48,7 @@ var metronome = (function() {
   var display = (function(){
     var state = 0;
     var draw = function( state ) {
+      $(canvas).width( $(canvas).parent().width() );
       ctx.clearRect(0,0,canvas.width,canvas.height);
       var width = canvas.width/2;
       ctx.fillRect(state*width,0,state*width+width,canvas.height);
@@ -79,4 +80,8 @@ $("div.button").toggle( function(){
     metronome.stop();
     $(this).children("span").html("Start");
   });
+$("input").click( function() {
+  $(this).val("");
+  });
+window.top.scrollTo(0,1);
 });
